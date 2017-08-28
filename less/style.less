@@ -1,0 +1,64 @@
+body {
+    background: gray;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    & h2 {
+        color: white;
+        text-align: center;
+    }
+    & .flex-caption {
+        background-color: grey; //bottom: 0;
+        color: #ffffff;
+        font-size: 14px; // left: 0;
+        line-height: 18px;
+        padding: 2%;
+        text-align: center;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+        width: 96%;
+        opacity: 0.5;
+        margin: -35px 0 0 0;
+    }
+}
+
+#carousel .flex-active-slide {
+    border: 5px solid #666666;
+}
+
+#carousel img {
+    opacity: 0.5;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.flex-active-slide img {
+    opacity: 1 !important;
+}
+
+// Стили PopUp
+.wrapper-popup {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    & .popup {
+        position: absolute;
+        left: 7.4%;
+        width: 85%;
+        margin-top: 2%;
+        padding: 0;
+        overflow-y: hidden;
+        & .flexslider {
+            border: none;
+        }
+    }
+}
